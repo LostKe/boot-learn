@@ -1,0 +1,4 @@
+org.springframework.context.ApplicationContextInitializer=\
+org.zsq.sdk.SdkInitializer
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.zsq.sdk.SpringContextHolder
