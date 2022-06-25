@@ -1,0 +1,12 @@
+server:
+  port: 8099
+
+
+app:
+  env:
+    config: dev
+
+
+spring:
+  profiles:
+    active: dev
