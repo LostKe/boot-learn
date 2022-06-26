@@ -32,18 +32,18 @@ public class LearnApplication {
         log.info("current config:{}", config);
         cust.test();
 
-        try {
-            HotDeploy.execute("/Users/zhangshuqing/jzt-git-work/hotfix/target/hotfix-1.0-SNAPSHOT.jar");
-        } catch (Exception e) {
-            log.error("error", e);
-        }
-
-        Object hotfix = SpringContextHolder.getBean("hotfix");
-        log.info(hotfix.toString());
-
-        //反射调用 service 的方法
-        hotfix.getClass().getDeclaredMethod("doHotFix").invoke(hotfix);
-
+//        try {
+//            HotDeploy.execute("/Users/zhangshuqing/jzt-git-work/hotfix/target/hotfix-1.0-SNAPSHOT.jar");
+//        } catch (Exception e) {
+//            log.error("error", e);
+//        }
+//
+//        Object hotfix = SpringContextHolder.getBean("hotfix");
+//        log.info(hotfix.toString());
+//
+//        //反射调用 service 的方法
+//        hotfix.getClass().getDeclaredMethod("doHotFix").invoke(hotfix);
+//
 
 
 
