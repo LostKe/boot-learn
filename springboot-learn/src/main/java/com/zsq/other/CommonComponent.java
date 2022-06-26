@@ -9,10 +9,11 @@ import org.springframework.stereotype.Component;
 public class CommonComponent {
 
 
+
     private String data;
 
     public void test() {
-        System.out.println("CommonComponent test ,data:{}" + data);
+        System.out.println("CommonComponent test ,data:" + data);
 
     }
 
