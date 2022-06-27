@@ -17,6 +17,7 @@ public class SDKBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
         BeanDefinition commonComponent = beanFactory.getBeanDefinition("commonComponent");
         if (commonComponent != null) {
             MutablePropertyValues propertyValues = commonComponent.getPropertyValues();
+            //这里是给类的成员变量赋值，变量需要有setter 方法
             propertyValues.add("data", "bbb");
         }
     }
